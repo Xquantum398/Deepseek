@@ -40,7 +40,7 @@ def resolve_m3u8_link(url, headers=None):
     final_url_after_redirects = None
 
     # Verifica se è un URL di vavoo.to
-    is_vavoo = "vavoo.to" in url.lower()
+    is_vavoo = "https://inattv1308.xyz/" in url.lower()
 
     try:
         with requests.Session() as session:
@@ -51,7 +51,7 @@ def resolve_m3u8_link(url, headers=None):
             final_url_after_redirects = response.url
             print(f"Passo 1 completato. URL finale dopo redirect: {final_url_after_redirects}")
 
-            # Se è un URL di vavoo.to, salta la logica dell'iframe
+            # Se è un URL di https://inattv1308.xyz/, salta la logica dell'iframe
             if is_vavoo:
                 if initial_response_text and initial_response_text.strip().startswith('#EXTM3U'):
                     return {
