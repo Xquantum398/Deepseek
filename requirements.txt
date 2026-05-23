@@ -13,3 +13,4 @@ urlparse
 urljoin
 quote
 unquote
+ re
