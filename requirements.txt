@@ -9,3 +9,7 @@ flask-socketio
 gevent-websocket
 urllib3
 urllib.parse
+urlparse
+urljoin
+quote
+unquote
